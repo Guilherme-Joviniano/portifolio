@@ -1,3 +1,14 @@
 ::root{
   --bg-color: ;   
 }
+
+.container-title{
+  color: #FFF;
+}
+.slide{
+  height: 95vh;
+  overflow: hidden;
+}
+.navbar{
+  background: transparent !important; 
+}

@@ -11,15 +11,20 @@
     <script src="assets/UIkit/js/uikit-icons.min.js"></script>
 </head>
 
-<body>
+<body  class="uk-dark" >
     <div class="uk-container-expand">
-        <nav class="uk-navbar-container" uk-navbar>
+        <nav class="uk-navbar-container  uk-navbar-transparent  uk-position-fixed" style="z-index: 1; width: 95vw;" uk-navbar>
             <a class="uk-navbar-item uk-logo" href="">
-                <img data-src="./assets/logo.png" width="150px" height="150px" alt="Logo Com o Nome Guilherme Joviniano " uk-img>
+                <img data-src="./assets/logo.png" width="150px" height="150px"
+                    alt="Logo Com o Nome Guilherme Joviniano " uk-img>
             </a>
             <div class="uk-navbar-right">
-                <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle>Menu</a>
+                <div class="uk-flex uk-flex-bottom ">
 
+                    <span uk-icon="icon: menu; ratio: 1.5; " class="uk-margin-small-right"></span>
+                    <a href="#offcanvas-slide" class="uk-button uk-button-text uk-text-lead  uk-text-muted " uk-toggle>MENU</a>
+
+                </div>
                 <div id="offcanvas-slide" uk-offcanvas>
                     <div class="uk-offcanvas-bar">
 
@@ -39,9 +44,33 @@
                 </div>
             </div>
         </nav>
+        <div uk-slideshow = "animation: slide;"  class="slide">
+            <ul class="uk-slideshow-items"   >
+                <li>
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" uk-cover>
+                    <div class="uk-position-center uk-position-small">
+                        <div uk-slideshow-parallax = "x: 500, -500">
+                            <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m  uk-border-rounded ">
+                                <div class="uk-card-badge uk-label-warning">Javascript</div>
+                                <h3 class="uk-card-title">Agenda</h3>
+                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+            
+                    </div>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" uk-cover>
+                </li>
+                <li >
+                    <img src="https://images.unsplash.com/photo-1603684470419-9f41146fddac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" uk-cover>
+                </li>
+            </ul>
 
-        <div class="uk-container">
-        </div>
+            <a class="uk-position-center-left uk-position-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+       </div>
     </div>
 </body>
 
