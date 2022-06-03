@@ -11,9 +11,10 @@
     <script src="assets/UIkit/js/uikit-icons.min.js"></script>
 </head>
 
-<body  class="uk-dark" >
+<body class="uk-dark">
     <div class="uk-container-expand">
-        <nav class="uk-navbar-container  uk-navbar-transparent  uk-position-fixed" style="z-index: 1; width: 95vw;" uk-navbar>
+        <nav class="uk-navbar-container  uk-navbar-transparent  uk-position-fixed" style="z-index: 1; width: 95vw;"
+            uk-navbar>
             <a class="uk-navbar-item uk-logo" href="">
                 <img data-src="./assets/logo.png" width="150px" height="150px"
                     alt="Logo Com o Nome Guilherme Joviniano " uk-img>
@@ -22,7 +23,8 @@
                 <div class="uk-flex uk-flex-bottom ">
 
                     <span uk-icon="icon: menu; ratio: 1.5; " class="uk-margin-small-right"></span>
-                    <a href="#offcanvas-slide" class="uk-button uk-button-text uk-text-lead  uk-text-muted " uk-toggle>MENU</a>
+                    <a href="#offcanvas-slide" class="uk-button uk-button-text uk-text-lead  uk-text-muted "
+                        uk-toggle>MENU</a>
 
                 </div>
                 <div id="offcanvas-slide" uk-offcanvas>
@@ -44,33 +46,50 @@
                 </div>
             </div>
         </nav>
-        <div uk-slideshow = "animation: slide;"  class="slide">
-            <ul class="uk-slideshow-items"   >
+        <div uk-slideshow="animation: slide;" class="slide">
+            <ul class="uk-slideshow-items">
                 <li>
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" uk-cover>
-                    <div class="uk-position-center uk-position-small">
-                        <div uk-slideshow-parallax = "x: 500, -500">
-                            <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m  uk-border-rounded ">
-                                <div class="uk-card-badge uk-label-warning">Javascript</div>
-                                <h3 class="uk-card-title">Agenda</h3>
-                                <p>Lorem ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia24681-1041.jpg"
+                        alt="" uk-cover>
+                    <div class="uk-position-center ">
+                        <div uk-slideshow-parallax="x: 400, -400" class="uk-flex-inline uk-flex-center uk-flex'">
+                            <div class="uk-card uk-card-body uk-width-100 uk-border-rounded">
+
+                                <div class="uk-card-badge uk-label-danger">Software Developer Student</div>
+                                <h3 class="uk-card-title uk-text-bolder font-size" style="color:#fff">
+                                    <a class="uk-link-toggle"
+                                        href="https://github.com/Guilherme-Joviniano/projetoAgenda" target="_blank">
+                                        <span class="uk-link-heading">GUILHEERME JOVINIANOO</span>
+                                    </a>
+                                </h3>
+                                <p class=" uk-text-large about-me-text">Hello! I'm a software developer student,
+                                    actually studying JS, Java and noSQL'S platforms</p>
                             </div>
                         </div>
-            
+
                     </div>
                 </li>
                 <li>
-                    <img src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" uk-cover>
+                    <img src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="" uk-cover>
                 </li>
-                <li >
-                    <img src="https://images.unsplash.com/photo-1603684470419-9f41146fddac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" uk-cover>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1603684470419-9f41146fddac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                        alt="" uk-cover>
                 </li>
             </ul>
 
-            <a class="uk-position-center-left uk-position-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-            
-       </div>
+            <a class="uk-position-center-left uk-position-large uk-hidden-hover" href="#" uk-slidenav-previous
+                uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-large uk-hidden-hover" href="#" uk-slidenav-next
+                uk-slideshow-item="next"></a>
+        </div>
+        <div class="uk-container uk-padding-large">
+            <div class="uk-column-1-2">
+                <p  class="uk-text-lead uk-text-bolder" >Code for Love</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, labore nihil pariatur reprehenderit dignissimos temporibus harum, incidunt laborum fugit consectetur vitae, natus vero laudantium voluptates ea iusto sequi quibusdam blanditiis.</p>
+            </div>
+        </div>
     </div>
 </body>
 
