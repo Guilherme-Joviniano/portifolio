@@ -141,3 +141,8 @@ main {
     margin: 0 auto;
     right: 5%;
 }
+.text-gradient{
+    background: var(--contrast-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
