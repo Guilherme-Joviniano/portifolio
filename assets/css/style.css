@@ -14,7 +14,7 @@
 :root{
     --dark-color: #202020;
     --contrast-color: linear-gradient(to right, #7f00ff, #e100ff); /* Chrome 10-25, Safari 5.1-6 */
-
+    --contrast-bg-color: #7f00ff;
 }
 a{
     text-decoration: none;
@@ -146,4 +146,8 @@ main {
     background: var(--contrast-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.text-border{
+    color: #000;
+    text-shadow: -1px -1px 0 var(--contrast-bg-color), 1px -1px 0 var(--contrast-bg-color), -1px 1px 0 var(--contrast-bg-color), 1px 1px 0 var(--contrast-bg-color);
 }
